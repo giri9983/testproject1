@@ -20,4 +20,11 @@ Pages required: Login Page. Put validation for user name and password.
                 Allow user to display attachments in grid form. Grid columns: Device ID, Name, Attachment (allow to display multiple attachments).
                 Also Allow user to upload documents in edit mode.
                 
-                
+ Table Structure:
+ Users: username, last name, first name,password, role, groupID
+ devices: ID, name, manufacturer, service date, calibration date,owner,location, device type, device site,Status (Active, sold, trash), Organization
+ 
+  files: Store files in Web server only in Attachments/DeviceID folder
+ 
+ 
+ 
