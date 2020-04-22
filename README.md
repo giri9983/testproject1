@@ -27,4 +27,26 @@ Pages required: Login Page. Put validation for user name and password.
   files: Store files in Web server only in Attachments/DeviceID folder
  
  
- 
+ Requirements: 4/22/2020
+
+Filter Section: 
+      Apply button: selected filters should apply to grid. Display selected filters in “Selected filters” area.
+                                Remember all changes done (put them in session memory or something like that).
+Disable apply button once applied. Enable only when a new filter option is selected.
+      Cancel button: when user click on cancel button, only clear selection which were not applied yet.
+                                 I mean in a filter we have 10 choices. I select choice1, choice2. Click on apply button.
+                                Now, I select choice 3 and click on cancel button. This should just remove choice 3 from filter. Do not refresh grid or do not change anything in “selected filters”.
+ Disable button once clicked on cancel. Enable only when a new filter option is selected.
+
+Grid: Make it to occupy full width and height of page (I mean remaining)
+           Device ID in grid should have a link. Click on this should open a new browser window (not tab).
+          New pop-up should display device details.
+Device details pop-up:
+             Have 2 tabs
+             1st tab display details win  “name”: value  format. (convert read-only values to editable when we click on edit button)
+             2nd tab display a grid with files
+                           Grid columns.  Year, list of files as attachments, calibration due date
+                           In edit mode, bring a control that can be used to attach documents. Store them in folder root level with following folder structure. (root/attachments/Devices/Device ID/Year)
+
+
+Selected filters section: display x per filter. not per choice. show selected options in comma separated. if string is more than 30 characters, add "..." at the end and show whole value on tooltip
